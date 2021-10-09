@@ -1,0 +1,128 @@
+* { /* fresh font */
+    font-family: 'Oswald', sans-serif; 
+}
+
+h1 { /* title heading */
+    text-align: center;
+    color: #000FFF;
+    background-color: gray;
+    margin: auto;
+    border-style: groove;
+    border-color: rgb(0,0,255);
+    border-width: 5px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0.5cm 0.1in 14px 9.6px;
+    position: static;
+}
+
+h2 { /* style for subheadings */
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5ch;
+    margin-bottom: 5px;
+}
+
+h3 { /* style date */
+    margin-left: 10vmax;
+}
+
+a { /* style link to homepage */
+    margin-left: 10vmin;
+    display: inline;
+}
+
+details { /* adjust sizing of details dropdown */
+    height: auto;
+    width: auto;
+    position: relative;
+    display: inline-block;
+}
+
+details p { /* super cool descendant combinator */
+    background-color: red;
+}
+
+li:first-of-type + li { /* super cool adjacent sibling combinator */
+    color: red;
+}
+
+li.swag { /* super cool element.class selector */
+    color: red;
+}
+
+h2 ~ h3 { /* super cool general sibling combinator */
+    color: red;
+}
+
+.decoration { /* add a cool wavy line for text decoration */
+    text-decoration: wavy overline hsl(0, 100%, 50%);
+}
+
+button:hover, .cool { /* change color when user is hovering over button */
+    color: cyan;
+}
+
+button:active { /* change color when user clicks button */
+    color: red;
+}
+
+.flex-container { /* parent element container and its properties (the flexbox itself) */
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+    flex-basis: auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.flex-container > div { /* the child elements of the flex container and their properties*/
+    background-color: gray;
+    padding: 20px;
+}
+
+.grid-container { /* parent element container and its properties (the grid itself) */
+    display:grid;
+    grid-template-columns: auto;
+    background-color: blue;
+    padding: 15px;
+    gap: 5px;
+    justify-items: left;
+    align-items: left;
+}
+
+.grid-item { /* the child elements of the grid container and their properties*/
+    background-color: gray;
+    border: 3px;
+    border-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 680px) { /* media query that changes color of page when screen is big enough */
+    body {
+        background-color: blue;
+    }
+}
+
+video { /* adjust video size */
+    width: 240px;
+    height: 360px;
+}
+
+img { /* adjust image size */
+    max-width: fit-content;
+    min-width: none;
+}
+
+#epic { /* very cool id selector */
+    color: red;
+}
+
+a[href="https://github.com/jasonwin20000/Lab2"] {
+    background-color: gold;
+}
