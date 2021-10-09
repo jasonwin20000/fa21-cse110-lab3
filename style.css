@@ -25,6 +25,7 @@ h2 { /* style for subheadings */
     margin-left: 5px;
     margin-right: 5ch;
     margin-bottom: 5px;
+    padding: 5px 5px 5px 5px;
 }
 
 h3 { /* style date */
